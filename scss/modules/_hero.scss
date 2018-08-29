@@ -1,5 +1,5 @@
 .hero__container{
-    background-image: url('/img/bg_hero_1600*500-1.jpg ');
+    background-image: url('https://adanuriplata.github.io/artemix.proto/img/bg_hero_1600*500-1.jpg ');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -13,7 +13,7 @@
     }
     @include lg {
         height: 480px;
-        background-image: url('/img/bg_hero_1299*463-1.jpg ');
+        background-image: url('https://adanuriplata.github.io/artemix.proto/img/bg_hero_1299*463-1.jpg ');
 
     }
     @include xl {

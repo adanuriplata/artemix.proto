@@ -2,6 +2,8 @@
 
 @import url(../../node_modules/aos/dist/aos.css);
 
+@import 'https://use.fontawesome.com/releases/v5.2.0/css/all.css';
+
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,600|Open+Sans:300,400,600|Raleway:400,600,700");/*!
 Theme Name: Artemix
 Theme URI: https://www.wordpressify.co
@@ -363,14 +365,200 @@ p,ul,li,a {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.btn {
+  padding: 10px 0;
+}
+
 .btn a {
-  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 13px;
+  border: solid 1px #c2c2c2;
+  color: rgba(0, 0, 0, 0.7);
   background: #fde236;
+  padding: 10px 10px 10px 2px;
+  border-radius: 50px;
+  margin: 10px;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn a:hover {
+  padding: 13px 10px 13px 2px;
+  background: #22AE96;
+  color: white;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn a:hover .button-brush {
+  background: black;
+  color: white;
+  padding: 9px;
+}
+
+.btn a:hover .button-whatsapp {
+  border-left: solid 1px #c2c2c2;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.btn a:hover .button-text {
+  padding-right: 5px;
+}
+
+.button-brush,.button-whatsapp,.button-text {
+  display: inline;
+}
+
+.button-brush {
+  padding: 8px;
+  background: #ffffff;
+  margin-right: 4px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-whatsapp {
+  padding-left: 2px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.button-text {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-more a {
+  text-decoration: none;
+  font-size: 12px;
+  border: solid 1px #c2c2c2;
+  color: rgba(0, 0, 0, 0.7);
+  background: #fde236;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 10px;
+  text-transform: uppercase;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.btn-more a:hover {
+  background: #f5f5f5;
+  color: #000000;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.form-big {
+  text-align: center;
+}
+
+.form-big form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.form-big__input {
+  padding: 5px;
+  width: 100%;
+}
+
+.form-big__input input {
+  display: block;
+  width: 100%;
+  height: 44px;
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 1.62857;
+  color: #555555;
+  background-color: #f5f5f5;
+  background-image: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 0px;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+
+.form-big__input textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 1.62857;
+  color: #555555;
+  background-color: #f5f5f5;
+  background-image: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 0px;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+
+.form-big__button {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.form-big__button input {
+  border: solid 1px #f5f5f5;
+  background: rgba(0, 0, 0, 0);
+  padding: 10px 25px;
+  color: #f5f5f5;
+  cursor: pointer;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.form-big__button input:hover {
+  background: #f5f5f5;
+  color: black;
+}
+
+.form-big__button-l {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.form-big__button-l input {
+  border: solid 1px #f5f5f5;
+  background: #f5f5f5;
+  color: #c2c2c2;
+  padding: 10px 25px;
+  cursor: pointer;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.form-big__button-l input:hover {
+  background: #c6b000;
+  border: solid 1px #c6b000;
+  padding: 11px 26px;
+  color: black;
+}
+
+textarea:focus,input:focus {
+  outline: none !important;
+  border: 2px solid #c2c2c2;
+}
+
+textarea:focus {
+  padding: 7px 19px;
 }
 
 .header {
-  position: fixed;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,7 +619,7 @@ p,ul,li,a {
 }
 
 .hero__container {
-  background-image: url("/img/bg_hero_1600*500-1.jpg ");
+  background-image: url("https://adanuriplata.github.io/artemix.proto/img/bg_hero_1600*500-1.jpg ");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -505,14 +693,15 @@ p,ul,li,a {
 }
 
 .talleres__taller__title h4 {
-  margin: 15px 0;
+  margin: 15px 0 14px 0;
   font-size: 15px;
 }
 
 .talleres__taller__data {
+  border-bottom: solid 1px #c2c2c2;
   font-size: 13px;
   font-weight: 300;
-  padding: 0 10px;
+  padding: 0 10px 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,6 +718,7 @@ p,ul,li,a {
 
 .talleres__taller__data div {
   width: 50%;
+  padding-bottom: 5px;
 }
 
 .talleres__taller__data div:nth-child(even) {
@@ -537,19 +727,18 @@ p,ul,li,a {
 
 .talleres__taller__data__precio {
   font-size: 18px;
+  font-weight: 600;
 }
 
 .talleres__taller__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.talleres__taller__buttons div {
-  padding: 0 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 10px 5px 10px;
+  text-align: center;
 }
 
 .wrapper_grid_talleres {
@@ -578,6 +767,7 @@ p,ul,li,a {
 }
 
 .description__text {
+  border-radius: 5px;
   margin: 0 auto;
   background: #ffff6d;
   padding: 20px;
@@ -629,7 +819,7 @@ p,ul,li,a {
 
 .historia__container {
   padding: 40px;
-  background-image: url("/img/bg_historia_1700*700.jpg ");
+  background-image: url("https://adanuriplata.github.io/artemix.proto/img/bg_historia_1700*700.jpg ");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -702,23 +892,33 @@ p,ul,li,a {
 
 .footer__vertical h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
   margin: 5px 0 10px 0;
 }
 
-.footer__vertical__1__form {
-  margin: 0 auto;
-  max-width: 250px;
-  padding: 30px 20px;
-  background: #ffffff;
-  border-radius: 5px;
+.footer__vertical__1__ubicacion__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 12px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 20px;
 }
 
-.footer__vertical__1__form div {
-  margin: 10px;
+.footer__vertical__1__ubicacion__text div {
+  max-width: 50%;
+}
+
+.footer__vertical__1__ubicacion__text__direccion {
+  padding: 0 20px;
 }
 
 .footer__vertical__2__keywords {
+  display: none;
   font-size: 12px;
   padding-top: 20px;
 }
@@ -728,8 +928,19 @@ p,ul,li,a {
   padding: 3px 5px;
 }
 
+.footer__vertical__2__menu {
+  text-align: left;
+  padding: 0 15%;
+}
+
 .footer__3__vertical__social {
   padding-top: 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.footer__3__vertical__description {
+  text-align: left;
 }
 
 .footer__copyrigth {
@@ -754,23 +965,6 @@ p,ul,li,a {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.contacto__map__iframe {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-.contacto__text__direccion p {
-  max-width: 400px;
-  padding-left: 10px;
-}
-
-.contacto__text__telefono p {
-  padding-left: 10px;
 }
 
 .contacto__item {
@@ -778,13 +972,31 @@ p,ul,li,a {
   padding: 10px 20px;
 }
 
-.contacto__item p {
-  font-size: 15px;
+.contacto__form-text__text {
+  font-size: 13px;
   font-weight: 300;
+  max-width: 100%;
+  padding: 15px 2px;
+}
+
+.contacto__text__direccion p {
+  max-width: 300px;
+  padding-left: 10px;
+}
+
+.contacto__text__telefono p {
+  max-width: 100%;
+  padding-left: 10px;
+}
+
+.contacto__map__iframe {
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .tallerista__container {
   padding: 40px;
+  padding-bottom: 80px;
   background: #fde236;
   color: #000000;
 }
@@ -803,7 +1015,7 @@ p,ul,li,a {
   text-align: center;
 }
 
-tallerista__title {
+.tallerista__title {
   width: 100%;
 }
 
@@ -812,9 +1024,31 @@ tallerista__title {
 }
 
 .tallerista__beneficios ul li {
+  text-align: left;
   font-weight: 300;
   display: inline-block;
-  padding: 3px 3px;
+  padding: 10px 3px;
+}
+
+.tallerista__beneficios ul li .icono {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.tallerista__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.tallerista__gallery__item {
+  max-width: 280px;
+  display: inline;
+  padding: 10px;
 }
 
 .edit-button {
@@ -822,6 +1056,16 @@ tallerista__title {
 }
 
 @media (min-width: 768px) {
+  .form-big__correo,.form-big__telefono {
+    width: 50%;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
   .hero__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -860,8 +1104,21 @@ tallerista__title {
     padding: 10px 30px;
   }
 
+  .footer__vertical__2__menu {
+    padding: 0 25%;
+  }
+
   .contacto__item {
     width: 50%;
+  }
+
+  .contacto__form-text__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .tallerista__beneficios ul li {
@@ -872,7 +1129,7 @@ tallerista__title {
 @media (min-width: 992px) {
   .hero__container {
     height: 480px;
-    background-image: url("/img/bg_hero_1299*463-1.jpg ");
+    background-image: url("https://adanuriplata.github.io/artemix.proto/img/bg_hero_1299*463-1.jpg ");
   }
 
   .hero__text__container {

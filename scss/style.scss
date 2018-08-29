@@ -10,6 +10,7 @@ Tags: arts, clean, minimal, modern, documentation
 
 @import '../../node_modules/normalize.css/normalize.css';
 @import '../../node_modules/aos/dist/aos.css';
+@import 'https://use.fontawesome.com/releases/v5.2.0/css/all.css';
 
 
 @import 'core/settings';
@@ -21,6 +22,7 @@ Tags: arts, clean, minimal, modern, documentation
 //components
 @import 'components/shadows';
 @import 'components/buttons';
+@import 'components/forms';
 
 @import 'modules/header';
 @import 'modules/hero';
